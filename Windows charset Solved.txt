@@ -1,0 +1,6 @@
+I thought unicode was the default for Windows??
+However, try this:
+Open Region and Language in the Control Panel,
+Click the Administrative tab, and then, under Language for non-Unicode programs, click Change system locale. If you're prompted for an administrator password or confirmation, type the password or provide confirmation.
+Select the language, and then click OK.
+To restart your computer, click Restart now.

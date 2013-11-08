@@ -1,0 +1,10 @@
+We have a project in TFS that has a non-English character (?) in it. When trying to script a few build-related things we've stumbled upon a problem - we can't pass the ? letter to the command line tools. Command prompt or what not else messes it up, and the tf.exe utility can't find the specified project.
+
+I've tried different formats for the .bat file (ANSI, UTF-8 with and without BOM) as well as scripting it in JavaScript (which is Unicode inherently) - but no luck. Anybody have an idea how to excecute a program and pass it a Unicode command line?
+
+
+=================================================================================================
+Try:
+
+chcp 65001
+which will change the code page to UTF-8. Also, you need to use Lucida console fonts.
